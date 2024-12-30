@@ -6,3 +6,12 @@ init:
 
 test:
 	go test
+
+arch:
+	@if [ -z "$(name)" ]; then \
+		echo "Error: Please provide a name using 'make archive name=<name>'."; \
+		exit 1; \
+	fi
+	@echo "Archiving files as $(name)..."
+	mv main.go ./archive/$(name).go
+	mv main_test.go ./archive/$(name)_test.go
