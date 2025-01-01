@@ -13,5 +13,5 @@ arch:
 		exit 1; \
 	fi
 	@echo "Archiving files as $(name)..."
-	mv main.go ./archive/$(name).go
-	mv main_test.go ./archive/$(name)_test.go
+	cp main.go ./archive/$(name).go
+	cp main_test.go ./archive/$(name)_test.go
