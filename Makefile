@@ -5,7 +5,7 @@ init:
 	cp ./default/main_test.go ./sol/sol_test.go
 
 test:
-	go test
+	go test -v ./sol/
 
 arch:
 	@if [ -z "$(name)" ]; then \
