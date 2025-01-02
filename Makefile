@@ -1,8 +1,8 @@
 all: init
 
 init:
-	cp ./default/main.go main.go
-	cp ./default/main_test.go main_test.go
+	cp ./default/main.go ./sol/sol.go
+	cp ./default/main_test.go ./sol/sol_test.go
 
 test:
 	go test
@@ -13,5 +13,5 @@ arch:
 		exit 1; \
 	fi
 	@echo "Archiving files as $(name)..."
-	cp main.go ./archive/$(name).go
-	cp main_test.go ./archive/$(name)_test.go
+	cp ./sol/sol.go ./archive/$(name).go
+	cp ./sol/sol_test.go ./archive/$(name)_test.go
