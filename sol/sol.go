@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-func findMin(nums []int) int {
+func main() {
 	fmt.Println("hi")
-	return 0
 }
